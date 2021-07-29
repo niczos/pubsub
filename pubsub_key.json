@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "rational-moon-320316",
+  "private_key_id": "72f4148fc766356302603c0cdb620763b9698094",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC1nYKFZ7kW9dXo\nHsd8T+GIRh6HTHNjfAnanIYEkxh81G5VDcGKtxtX9F6EAS3+OZtEo+yhQUhmQ1IM\njHGt2YFAaYxgO2RBAhyJ2f6xMiKNApoplf0gHinBMWaC1K2PVUkjQElsmVrGDwmW\nabm449aC6eJodhvIhHkLmWt8KAHbuFQbUPZOyHUaIR3NwPE1UMj/c14U8zpNiBiZ\nr8VOBlNd3Aw/M9Zzt30vigmjHSz4OY/47YLBCSlwx6ME3NCsMHvM504Py0Xi/FOq\nvGun0fM63i/BCFjbCvxk6eZvPR4OgP2yrJgZbs5LsFk0C4gNAgtL7aZHdXHS5fZN\n8YUuYLh1AgMBAAECggEAGmpnxNgekYKdw4aQjNoAi4XpZFQAF4j/1Op9yrYLcoKi\nbqAS1caGxV7/jVMvmaHO3ee64ASDD468pSMbWMZBWLlRZ+DTluoD9R/+Pc81O83U\nVvagK9b/S0CQcLiW6vlkayprU46lp5eh1R0ZHJWVCpMSsY92QI7WHVQKEHOwO4Ef\navqZMv65unKdcGbimnaDUYnrBvaJxXaabWeZBZBOASm7X6DB/qXleDdbZlbudGoJ\n0SCvuKntKugb8DYnW5YtsOKswz/3hwgvYlJFfX4Pp2tGAWA/qhSzJmsOhrq7v2sk\n9A8wgEndVpN7gKjKZtVir7QwO8J5ODXMc0fGM01s4QKBgQD4uNLpbDs7Yd1jYHLw\nY0ONoFwxMvLe+mgHee510CnbfnN6YHGbVhI5fDKsntN3P9UyeEa/gZ/KRcIQGcCS\nkuqzhSKHSuFRIIQFQU/EScBtR13oeCBSaSyOF4MVmIDtjfMeHeq0VaZUSIMniozp\nNuxdBx3Q4b3Z2CfkmxM6EPbBYQKBgQC67f1go+XupTUkQpTKDt8C9WewPVuTARir\nwwbWIzgv4rEnh7No41SLhIkayLm0qeIX0dZuBgk84I43N0yDxUrS6C8wrbsXXt/u\n5ccjKt2gXWIzmF301OsNxXMyroLP0o5HlvSsU9R26YAHopI+dZ94/0Ot8my2Yej5\nbOADQlMLlQKBgQDGMoHfgF+y8kl452KwLGmociEFE5R2GxTK4F8lgrvYLOvYmQHu\nxqe/Jzk6VVYtsLAzh6TY9nJevTfnnJ3YLzrX0z+wj/r8quyJQ4JM6HhunHA4z4Dy\nKt1WXWYXz27t3i/dz/k3uwjQIPhiigW/0gSIHSOlUD35WkZv5SNtIheAAQKBgB50\nKWR2Lz6a8bZvlnf4xkJgIr1msaWYdyF8i3+Vi1DZ2My84fDDoIF+XSvc6cxSJQCG\nci3Ik/a0CtdaDgAlw1Pq+c0vcJyVG1x7WN8U27iFnjsTprL9gTHkKilmnu8muYFW\nSZRNr/6TegVEahj85rc6txb+uNFZ0C/amgBN7OOlAoGBAK1MgNfKlFCHBxpF/Twr\n72pDhTbD3aYlupd9NC7g+EgsUx/o/7wT8i11arC25IBg9NGr8r+3ls+6UVDHAHQu\nZWKeWrnaiLqaPli2PDjmEGUpq4v0+TXWvm8SF4mzzYs62pWjapRWF0ixgVZkUvQy\nSyFpxrIEEryc8euF9HdKv8x5\n-----END PRIVATE KEY-----\n",
+  "client_email": "pubsub-service-account@rational-moon-320316.iam.gserviceaccount.com",
+  "client_id": "101786175268014414724",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub-service-account%40rational-moon-320316.iam.gserviceaccount.com"
+}
