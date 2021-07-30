@@ -4,12 +4,10 @@ provider "google" {
 }
 
 resource "google_pubsub_topic" "demo" {
-  #name ="${google_pubsub_topic.demo.name}-topic"
-  name = "demo-topic"
+  name = "${var.project_name}-topic"
 }
 
 resource "google_pubsub_subscription" "demo" {
-  #name  = "${google_pubsub_subscription.name}-subscription"
-  name = "demo-sub"
+  name = "${var.project_name}-sub"
   topic = google_pubsub_topic.demo.name
 }

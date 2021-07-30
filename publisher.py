@@ -14,7 +14,6 @@ except NameError:
 
 publisher = pubsub_v1.PublisherClient()
 
-
 data = 'Hey Hi Hello!'
 data = data.encode('utf-8')
 
