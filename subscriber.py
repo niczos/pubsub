@@ -2,7 +2,7 @@ import os
 from google.cloud import pubsub_v1
 from concurrent.futures import TimeoutError
 
-credentials_path = '/Users/nika.jurczuk/pubsub/pubsub_key.json'
+credentials_path = '/home/nika_jurczuk//pubsub_key.json'
 #credentials_path = '<PATH_TO_KEY>'
 subscription_path = 'projects/rational-moon-320316/subscriptions/demo-sub'
 #subscription_path = '<PATH_TO_SUBSCRIPTION>'
