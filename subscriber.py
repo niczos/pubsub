@@ -4,8 +4,13 @@ from concurrent.futures import TimeoutError
 from logging.handlers import SysLogHandler
 import logging
 
+<<<<<<< HEAD
 credentials_path = '/Users/nika.jurczuk/pubsup_key.json'
 # credentials_path = '<PATH_TO_KEY>'
+=======
+credentials_path = '/home/nika_jurczuk//pubsub_key.json'
+#credentials_path = '<PATH_TO_KEY>'
+>>>>>>> a98b5f1783d91b80b3f3c8ba62ace0409ff0397f
 subscription_path = 'projects/rational-moon-320316/subscriptions/demo-sub'
 # subscription_path = '<PATH_TO_SUBSCRIPTION>'
 
