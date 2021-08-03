@@ -1,11 +1,13 @@
 import os
 from google.cloud import pubsub_v1
 from concurrent.futures import TimeoutError
+from logging.handlers import SysLogHandler
+import logging
 
-credentials_path = '/Users/nika.jurczuk/pubsub/pubsub_key.json'
-#credentials_path = '<PATH_TO_KEY>'
+credentials_path = '/Users/nika.jurczuk/pubsup_key.json'
+# credentials_path = '<PATH_TO_KEY>'
 subscription_path = 'projects/rational-moon-320316/subscriptions/demo-sub'
-#subscription_path = '<PATH_TO_SUBSCRIPTION>'
+# subscription_path = '<PATH_TO_SUBSCRIPTION>'
 
 try:
     # set environmental variable
@@ -14,8 +16,8 @@ try:
 except NameError:
     print('Variable does not exist')
 
-# set timeout to 5s
-timeout = 5.0
+# set timeout to 60s
+timeout = 60
 
 subscriber = pubsub_v1.SubscriberClient()
 
@@ -23,14 +25,23 @@ subscriber = pubsub_v1.SubscriberClient()
 def callback(message):
     print(f'Received message: {message}')
     print(f'data: {message.data}')
+    logging.info(message)
     with open('output.txt', 'w') as f:
         f.write(f'{message.data}')
         f.close()
     message.ack()  # delete message from servers
 
 
+logger = logging.getLogger()
+# change IP to your own public IP of the vm
+logger.addHandler(SysLogHandler(address=('35.205.248.128', 514)))
+logging.basicConfig(filename='test.log', level=logging.INFO,
+    format='%(asctime)s:%(levelname)s:%(message)s')
+
 streaming_pull_future = subscriber.subscribe(subscription_path, callback=callback)
 print(f'listening for message on {subscription_path}')
+
+logging.warning("Siema")
 
 with subscriber:
     try:
