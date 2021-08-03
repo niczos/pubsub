@@ -1,0 +1,57 @@
+2021-08-03 12:53:27,650:WARNING:Siema
+2021-08-03 12:53:29,587:INFO:Message {
+  data: b'0'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,618:INFO:Message {
+  data: b'2'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,620:INFO:Message {
+  data: b'1'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,648:INFO:Message {
+  data: b'6'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,649:INFO:Message {
+  data: b'5'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,677:INFO:Message {
+  data: b'3'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,678:INFO:Message {
+  data: b'4'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,709:INFO:Message {
+  data: b'7'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,709:INFO:Message {
+  data: b'9'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:29,957:INFO:Message {
+  data: b'8'
+  ordering_key: ''
+  attributes: {}
+}
+2021-08-03 12:53:35,651:INFO:RPC termination has signaled streaming pull manager shutdown.
+2021-08-03 12:53:35,652:INFO:Observed terminating stream error 499 Locally cancelled by application!
+2021-08-03 12:53:35,652:INFO:Thread-ConsumeBidirectionalStream exiting
+2021-08-03 12:53:35,653:INFO:Thread-LeaseMaintainer exiting.
+2021-08-03 12:53:35,653:INFO:Observed terminating stream error 499 Locally cancelled by application!
+2021-08-03 12:53:35,654:INFO:Thread-Heartbeater exiting.
