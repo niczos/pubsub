@@ -10,7 +10,7 @@ credentials_path = '/home/nika_jurczuk/dataflow-pubsub-key.json'
 subscription_path = 'projects/dataflow-poc-317213/subscriptions/demo-sub'
 # subscription_path = '<PATH_TO_SUBSCRIPTION>'
 
-logging.basicConfig(filename='test.log', level=logging.INFO,
+logging.basicConfig(filename='/var/log/syslog', level=logging.INFO,
     format='%(asctime)s:%(levelname)s:%(message)s')
 
 try:
@@ -48,7 +48,7 @@ logging.warning("Siema")
 with subscriber:
     try:
         streaming_pull_future.result(timeout=timeout)
-    except TimeoutError:
+    except TimeoutError: #always go there after timeout
   #      with open('output.txt', 'w') as f:
    #         f.write('Loading failed due to Timeout')
     #        f.close()
