@@ -4,13 +4,10 @@
 import os
 import logging
 import re
-import pytz
-import json
 import googleapiclient.discovery
 from google.oauth2 import service_account
 from google.cloud import pubsub_v1
 from concurrent.futures import TimeoutError
-from logging.handlers import SysLogHandler
 
 # set own variables
 PROJECT_ID = '<PROJECT_ID>'
@@ -29,7 +26,7 @@ SCOPES = ['https://www.googleapis.com/auth/compute']
 MESSAGES = []
 
 try:
-    # set environmental variable
+    # set environment variable
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = credentials_path
     os.environ['GOOGLE_SUBSCRIPTION_PATH'] = subscription_path
 except NameError:
@@ -82,7 +79,7 @@ def filter_and_send_messages(MESSAGE):
     else:
         ROUTER_NAME = "None"
 
-    print(f"OUTPUT= {SMARTS} -b  {SAM_BROKER} -s {SAM_MANAGER} -t {RESOURCE.group(3)} --create-system notify {APP_NAME} "
+    print(f"OUTPUT= {SMARTS} -b {SAM_BROKER} -s {SAM_MANAGER} -t {RESOURCE.group(3)} --create-system notify {APP_NAME} "
     f"{RESOURCE.group(3)} {EVENT_NAME.group(3)} {SOURCE} momentary 172800 severiy= {SEVERITY} eventtext {EVENT_TEXT} "
     f"clearonacknowledge=TRUE category=Performanceuserdefined1=Core userdefined2=Script userdefined3=Prod userdefined12 " 
     f"{EVENT_SUMMARY.group(3)} 2>&1 routerName: {ROUTER_NAME}")
@@ -97,10 +94,6 @@ def send_to_smarts(MESSAGES):
 #################################################################
 #                           GCP PART 2                          #
 #################################################################
-
-logger = logging.getLogger()
-# change IP to your own public IP of the vm
-logger.addHandler(SysLogHandler(address=('34.140.96.51', 514)))
 
 streaming_pull_future = subscriber.subscribe(
     subscription_path, callback=callback)
