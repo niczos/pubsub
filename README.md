@@ -28,6 +28,6 @@ python publisher.py
 in other terminal.
 
 ### Smarts_script.py
-Set your own variables: project_id, region, path to your json account service key and path to subscription in pubsub. Also change IP to your own public IP of the vm. 
+Set your own variables: project_id, region, path to your json account service key and path to subscription in pubsub.  
 
 
